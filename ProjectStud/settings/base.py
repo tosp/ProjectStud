@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social.apps.django_app.default',
     'base.apps.BaseConfig',
-    'tosp_auth.apps.TospAuthConfig'
+    'tosp_auth.apps.TospAuthConfig',
+    'spaced_repetition.apps.SpacedRepetitionConfig'
 ]
 
 MIDDLEWARE = [
