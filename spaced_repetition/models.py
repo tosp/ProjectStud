@@ -10,7 +10,7 @@ class Folder(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return '%s' % (self.name)
+        return '{}'.format(self.name)
 
 
 class Deck(models.Model):
@@ -21,7 +21,7 @@ class Deck(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return '%s' % (self.name)
+        return '{}'.format(self.name)
 
 
 class Card(models.Model):
@@ -33,3 +33,6 @@ class Card(models.Model):
     last_studied = models.DateTimeField(default=datetime.datetime.now)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return '{}'.format(self.question)

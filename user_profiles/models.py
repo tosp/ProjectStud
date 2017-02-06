@@ -11,7 +11,7 @@ class Student(models.Model):
     home_directory = models.OneToOneField(Folder)
 
     def __str__(self):
-        return '%s' % (self.user)
+        return '{}'.format(self.user)
 
 
 @receiver(post_save, sender=User)
